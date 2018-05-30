@@ -149,6 +149,57 @@
                                             <constraint firstItem="cf1-Jf-p7b" firstAttribute="centerX" secondItem="C69-Vr-Avc" secondAttribute="centerX" id="mCL-E8-9dl"/>
                                         </constraints>
                                     </collectionViewCell>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="AddEmojiButtonCell" id="Wkf-Xe-E7A">
+                                        <rect key="frame" x="180" y="0.0" width="80" height="80"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="contactAdd" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oHM-HY-YCl">
+                                                    <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="54"/>
+                                                    <state key="normal">
+                                                        <color key="titleColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="addEmoji:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UyL-b8-ns8"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="oHM-HY-YCl" secondAttribute="trailing" id="2Vm-eS-UH7"/>
+                                            <constraint firstItem="oHM-HY-YCl" firstAttribute="leading" secondItem="Wkf-Xe-E7A" secondAttribute="leading" id="RM1-Z3-bek"/>
+                                            <constraint firstAttribute="bottom" secondItem="oHM-HY-YCl" secondAttribute="bottom" id="UXT-vu-esd"/>
+                                            <constraint firstItem="oHM-HY-YCl" firstAttribute="top" secondItem="Wkf-Xe-E7A" secondAttribute="top" id="tEm-hf-tGH"/>
+                                        </constraints>
+                                    </collectionViewCell>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="EmojiInputCell" id="g3L-FD-rgc" customClass="TextFieldCollectionViewCell" customModule="EmojiArt" customModuleProvider="target">
+                                        <rect key="frame" x="270" y="0.0" width="80" height="80"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tJz-Ln-BwC">
+                                                    <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="tJz-Ln-BwC" secondAttribute="trailing" id="Xsb-m9-Jo3"/>
+                                            <constraint firstAttribute="bottom" secondItem="tJz-Ln-BwC" secondAttribute="bottom" id="e52-yN-SZS"/>
+                                            <constraint firstItem="tJz-Ln-BwC" firstAttribute="top" secondItem="g3L-FD-rgc" secondAttribute="top" id="vc4-3h-htC"/>
+                                            <constraint firstItem="tJz-Ln-BwC" firstAttribute="leading" secondItem="g3L-FD-rgc" secondAttribute="leading" id="wku-d0-qcZ"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="textField" destination="tJz-Ln-BwC" id="FCi-HO-rNN"/>
+                                        </connections>
+                                    </collectionViewCell>
                                 </cells>
                             </collectionView>
                         </subviews>
